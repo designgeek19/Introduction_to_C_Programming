@@ -1,0 +1,27 @@
+# Example Program
+#
+# write a program in vi named "input_output.c" with the following code:
+#include <stdio.h>
+
+int main(void)
+{
+        printf("My full name initials are: %c%c%c and my age is %d.\n",'P','O','A',28);
+        return(0);
+}
+
+# Exit your vi and compile the code with: gcc input_output.c -o input_output
+# Rin the executable file with: ./input_output
+# this would print out the output on your terminal.
+# But, if you want your output to be a standard output, you need to redefine the code:
+
+#include <stdio.h>
+
+int main(void)
+{
+        char f,m,l;
+	int age;
+
+	scanf("%c %c %c %d", &f, &m, &l, &age);
+	printf("My full name initials are: %c%c%c and my age is %d.\n",f,m,l,age);
+        return(0);
+}
