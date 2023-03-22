@@ -1,0 +1,60 @@
+**Arithmetic Expressions in C
+**Assignment Operators
+**Urinary Operators
+**Logical Operators
+//
+- Arithmetic expressions include the usual operators like +, -, *, / etc.
+- The processing order of arithmetic operations are as follows:
+-- The expressions are processed from left to right
+-- + and - are at the same level. They are processed in the order in which they appear
+-- * and / are at a higher level, they are processed first (before + & -) regardless of their position in the expression (cf. BODMAS)
+-- Modifiers (+ for positive and - for negative) have the highest level of presidence, they will be considered first when they are found mixed up in an expression with other arithmetic operators.
+//
+Examples:
+- double x = 2.0, y = 5.0, z;
+if z = x + y; then z = 7.0
+if z = y - x; then z = 3.0
+if z = x*y; then z = 10.0
+if z = y/x; then z = 2.5
+//
+Example 2
+- double a=10.0, b=5.0, c=2.0, z;
+if z = a + b/c,
+printf("%lf\n",z);  
+//this prints the result of the above expression (divides b by c first before adding the result to a, then print the result.)
+//
+Example 3
+z = (a + b)/c;
+printf("%lf\n",z)  
+//Handles the expression of inside the bracket first, before dividing the result with the value of c, then prints the result.
+//
+//
+- Assignment Operators
+e.g.
+- i = i + 1 
+// the = is used to compute the value of i + 1 and stores the result in i
+- i += 1 is the same expression as i = i + 1
+- i *= 2 is the same expression as i = i * 2
+//
+//
+- Unary Operators (used to increament and decreament)
+e.g.
+int i=2, j=3, m=7, k;
+k = ++i + j;
+// i gets pre-increamented (since the ++ comes before i, the value of i gets increased by 1 before it is added to the value of j, so as a result, k would hold the value of 6 (++i means: add 1 to the value of i before continuing with the evaluation))
+k = m-- + j; 
+// i gets post-decreamented (since the -- comes after m, the value of m would be added to the value of j first, (3+7), then the result would be assigned as the value of k. But the new value of m would become 6 (--m means: subtract 1 from m after the evaluation has been done, not before))
+//
+//
+- Logical Expressions
+A variable in logical sense gives a logical interpretation, True or False
+TRUE = Zero
+FALSE = Non-Zero
+e.g. 
+int x = 7;  //TRUE
+double z = 0.0001;  //TRUE
+char abc = 0x00;  //FALSE
+char x = 'a';  //TRUE
+float b = 0.0;  //FALSE
+//
+//
