@@ -1,0 +1,31 @@
+# Compiling and running the "Hello World" program
+
+# After creating the "Hello World" Program:
+
+#include <stdio.h>
+
+# int main(void);
+# {
+#       printf("Hello World\n");
+#       return(0);
+# }
+#
+# After writing the program, you use the gcc compiler to compile the code in the file "hello.c"
+# run the command "gcc hello.c". This command will:
+# * read the cource file
+# * process it
+# * link it with the runtime library
+# * create a new file "a.out"
+# if you run the "ls" command, you will see the new executable file "a.out" with the source file "hello.c"
+# you can check the permission status by running "ls -l"
+# to run the program, use the command "./a,out"
+# to change the program name:
+# * delete the "a.out" file with the command "rm a.out"
+# * Instruct the compiler to compile the "hello.c" source file and put the output inside a new executable file named "hello".
+# *Use the code "gcc hello.c -o hello"
+#
+# Optionally:
+# to create a new executable file from the existing source file "hello.c", you can use the "make" command
+# * "make hello"
+# this would compile your program and add the output inside a new executable file named "hello"
+# you can run the "hello" program with "./hello" to see the output.ls
