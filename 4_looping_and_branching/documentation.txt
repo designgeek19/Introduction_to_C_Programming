@@ -1,0 +1,73 @@
+*Topics
+**Loops
+- for loops
+- while loops
+- do/while
+
+**Break and continue statements
+**Branching in C
+- if, if/else, if/else if
+- switch statements
+//
+*Looping
+e.g.
+#include <stdio.h>
+
+/* computing factorial of 5 */
+int main(void) 
+{
+	int answer = 5 * 4 * 3 * 2 * 1;
+	printf("Answer = %d\n", answer);
+}
+//This code above is used to compute the factorial of 5. But what if you have a larger number, like 10, computing the factorial may involve a larger code, so we'll just put it in a loop instead.
+
+#include <stdio.h>
+
+/* computing the factorial of 10 */
+int main(void)
+{
+	int ans = 1;
+	int i;
+	for(i=1; i<=10; i++)
+		{
+		ans = ans * i;
+		}
+	printf("Answer = %d\n", ans)
+}
+
+/* 
+In this code, you initialize the variable fact to 1, as multiplying any number by 1 will not change its value. Then we use a "for" loop to iterate from 1 to 10, and for each iteration, we multiply the current value of fact by the loop variable i, and assign the result back to fact.
+
+At the end of the loop, "ans" will hold the factorial of 10 (which is 10 x 9 x 8 x 7 x 6 x 5 x 4 x 3 x 2 x 1 = 3,628,800), and we print the result using the printf() function.
+*/
+
+/*
+Here is a step by step breakdown of the code:
+#include <stdio.h> = This header line includes the standard input-output library in the program
+- int main(void) = declares a main function that returns an integer
+- int i, ans = 1; = Inside the main function, we declare two integer variables i and fact. 
+We initialize ans to 1
+- for(i=1; i<=10; i++) {
+                ans = ans * i;
+                }
+	The "for" loop calculates the factorial of 10. 
+	"i=1" It starts with initializing the loop variable i to 1. 
+	"ans = ans * 1" Then, for each iteration of the loop, it multiplies the current value of 
+	"ans" with the current value of "i", and assigns the result back to "ans" as its new value. 
+	"i<=10; i++" Then, it increments i by 1 using the ++ operator. 
+	The loop continues to execute as long as i is less than or equal to 10
+- printf("Answer = %d\n", ans) = After the loop completes, we use the printf() function to display
+	the factorial of 10. We use the %d format specifier to print the value of ans, which 
+	holds the factorial of 10
+
+* The Syntax for "for" loops
+for (int_expr; loop_cond; loop_expr)
+	prog statement
+
+e.g.
+int i;  			//initialization: the value of "i" starts from 10
+   for(i=10; i>=0; i--); {	//condition: continue to decreament the current value of "i" by 1 as long as it is >=0 
+   	print("%d \n", i);	//once the condition is met, print the value of "i" at that point 
+				and add a new line (the open/close curly braces are optional) 
+   }
+   printf("\n>>BLAST Off<<\n");	//after that, print the statement >>BLAST OFF<< on a new line
