@@ -4,10 +4,19 @@
 // // countdown to START RUNNING
 int main(void)
 {
-	int cnt = 10;
-	while(cnt >=1); {
-		printf("%d \n", cnt);
-		cnt--;
+	int a = 10;
+	while(a <= 0); {
+		printf("%d \n", a--);
+		printf("%d \n", a--);
+		printf("%d \n", a--);
+		printf("%d \n", a--);
+		printf("%d \n", a--);
+		printf("%d \n", a--);
+		printf("%d \n", a--);
+		printf("%d \n", a--);
+		printf("%d \n", a--);
+		printf("%d \n", a--);
+		printf("%d \n", a--);
 	}
 	printf("\n>>START RUNNING<<\n");
 

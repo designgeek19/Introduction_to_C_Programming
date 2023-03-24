@@ -71,3 +71,55 @@ int i;  			//initialization: the value of "i" starts from 10
 				and add a new line (the open/close curly braces are optional) 
    }
    printf("\n>>BLAST Off<<\n");	//after that, print the statement >>BLAST OFF<< on a new line
+//
+//
+*Break/Continue constructs
+- Break can be used to break out of a loop (it is written as break;)
+- Continue (written as continue;) is used to bypass the rest of the loop abd begin th next iteration
+//
+//
+*Branching
+- if, else and else if conditional statements can be used to make decisions in three different ways in C:
+a. 
+if (expression)
+	program statement;
+
+b. 
+if (expression)
+	program statement 1
+else
+	program statement 2
+
+c.
+if (expression)
+        program statement 1
+else if (expression)
+        program statement 2
+else
+	program statement 3
+
+//note* The program statements in "if" and "else if" are what should happen if the expressions/conditions are true. While the program statement under "else" is what should happen if the expressions/conditions are false.
+// You can write many program statements under an expression, if you are writing more than one block of code as program statements, enclose them in the curly brackets { }.
+//
+//
+*Switch Statement
+The syntax for the switch statement is:
+
+switch (expression) {
+case value1:
+	program statement
+	...;
+	break;
+
+case valuen:
+        program statement
+        ...;
+        break;
+
+default:
+        program statement
+        ...;
+        }
+
+//note* make sure you keep the break; statement at the end of each case value
+If none of the case values are executeed, then the default under would be executed.
